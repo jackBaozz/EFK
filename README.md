@@ -126,3 +126,12 @@ fluentd需要挂载`fluent.conf`配置文件,主要配置链接es的信息和存
 
 然后进入discover,就可以看到fluentd收集上来的日志（container_name为/nginx）
 ![](https://img2020.cnblogs.com/blog/1624324/202011/1624324-20201106183234686-1660253737.png)
+
+
+
+## 5、个性化
+```
+如果机器上有多个es服务,那么需要修改docker-compose里面的services名称,以及容器内部的conf文件.
+
+如果权限不足,请赋予类似data文件的chmod 777 ./data权限
+```
